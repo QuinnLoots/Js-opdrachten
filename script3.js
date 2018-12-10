@@ -39,17 +39,71 @@ function display2(){
 }
 
 function bereken(){
+let a=0;
 let b=2;
-let a;
 a=b++;
+alert("a: "+a+"\nb: "+b);
+
+a=0;
+b=2;
 a=++b;
+alert("a: "+a+"\nb: "+b);
+
+
+a=0;
+b=2;
 a=b--;
+alert("a: "+a+"\nb: "+b);
+
+
+a=0;
+b=2;
 a=--b;
-a+=b++;
-a=1; a+=++b;
-a=1; a-=b++;
-a=1; a-=++b;
-a=1; a+=b--;
-a=1; a+=--b;
+alert("a: "+a+"\nb: "+b);
+//a+=b++;
+
+a=1;
+b=2;
+a+=++b;
+alert("a: "+a+"\nb: "+b);
+
+
+a=1;
+b=2;
+a-=b++;
+alert("a: "+a+"\nb: "+b);
+
+a=1;
+b=2;
+a-=++b;
+alert("a: "+a+"\nb: "+b);
+
+
+a=1;
+b=2;
+a+=b--;
+alert("a: "+a+"\nb: "+b);
+
+a=1;
+b=2;
+a+=--b;
+alert("a: "+a+"\nb: "+b);
 }
 
+
+let tab2 = [-2,1,4];
+function subtract(x){
+    let result = x-tab2[0];
+    if (result <0){
+        alert("getal is negatief");
+    } else{
+        alert("getal is positief");
+    }
+    return (result);
+}
+
+function display2(){
+alert(subtract(tab2[0]));
+alert(subtract(tab2.length-1));
+    
+}
